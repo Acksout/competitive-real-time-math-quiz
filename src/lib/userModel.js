@@ -12,6 +12,10 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: [true, "Please provide a password"],
   },
+  score: {
+    type: Number,
+    default: 0,
+  },
   createdAt: {
     type: Date,
     default: Date.now,
